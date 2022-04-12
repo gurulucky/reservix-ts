@@ -8,13 +8,13 @@ const gerate = {
     children: [
         {
             id: 'gerate',
-            title: 'gerate',
+            title: 'Geräte',
             type: 'collapse',
             // icon: IconTool,
             children: [
                 {
                     id: 'ubersicht',
-                    title: 'Ubersicht',
+                    title: 'Übersicht',
                     type: 'item',
                     // icon: IconSmartHome,
                     url: '/ubersicht',

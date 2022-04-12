@@ -4,6 +4,6 @@ import { Typography } from '@mui/material';
 
 // ==============================|| SAMPLE PAGE ||============================== //
 
-const EventPage = () => <Typography variant="h4">Scan-Status zurucksetzen</Typography>;
+const EventPage = () => <Typography variant="h4">Scan-Status zurücksetzen</Typography>;
 
 export default EventPage;

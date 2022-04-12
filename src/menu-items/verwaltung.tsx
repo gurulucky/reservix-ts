@@ -30,7 +30,7 @@ const verwaltung = {
                 },
                 {
                     id: 'scanstatus',
-                    title: 'Scan-Status zurucksetzen',
+                    title: 'Scan-Status zurücksetzen',
                     type: 'item',
                     // icon: IconNews,
                     url: '/scanstatus',
