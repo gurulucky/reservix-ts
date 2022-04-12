@@ -1,23 +1,12 @@
 import React, { FunctionComponent, ReactElement } from 'react';
 
 // material-ui
-import { Theme } from '@mui/material/styles';
 import { SvgIconTypeMap, SnackbarOrigin, ChipProps, TableCellProps } from '@mui/material';
 
 import { OverridableComponent } from '@mui/material/OverridableComponent';
 
 // project imports
 import { TablerIcon } from '@tabler/icons';
-import { CartStateProps } from './cart';
-import { KanbanStateProps } from './kanban';
-import { CustomerStateProps } from './customer';
-import { ContactStateProps } from './contact';
-import { ProductStateProps } from './e-commerce';
-import { ChatStateProps } from './chat';
-import { CalendarStateProps } from './calendar';
-import { MailStateProps } from './mail';
-import { UserStateProps } from './user';
-
 import { SnackbarProps } from './snackbar';
 
 export type ArrangementOrder = 'asc' | 'desc' | undefined;
@@ -107,15 +96,6 @@ export interface ColorPaletteProps {
 
 export interface DefaultRootStateProps {
     snackbar: SnackbarProps;
-    cart: CartStateProps;
-    kanban: KanbanStateProps;
-    customer: CustomerStateProps;
-    contact: ContactStateProps;
-    product: ProductStateProps;
-    chat: ChatStateProps;
-    calendar: CalendarStateProps;
-    mail: MailStateProps;
-    user: UserStateProps;
 }
 
 export interface ColorProps {
