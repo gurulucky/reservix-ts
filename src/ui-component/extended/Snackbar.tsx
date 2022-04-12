@@ -8,7 +8,7 @@ import MuiSnackbar from '@mui/material/Snackbar';
 import CloseIcon from '@mui/icons-material/Close';
 
 import { KeyedObject } from 'types';
-import { useDispatch, useSelector } from 'store';
+import { useDispatch, useSelector } from '../../store';
 import { closeSnackbar } from 'store/slices/snackbar';
 
 // animation function

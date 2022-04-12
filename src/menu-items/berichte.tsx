@@ -1,5 +1,3 @@
-import { FormattedMessage } from 'react-intl';
-// assets
 import { IconReport, IconTicket, IconScan, IconReportAnalytics } from '@tabler/icons';
 // ==============================|| berichte MENU ITEMS ||============================== //
 
@@ -9,13 +7,13 @@ const berichte = {
     children: [
         {
             id: 'berichte',
-            title: <FormattedMessage id="Berichte" />,
+            title: 'Berichte',
             type: 'collapse',
             icon: IconReport,
             children: [
                 {
                     id: 'tickets',
-                    title: <FormattedMessage id="Tickets" />,
+                    title: 'Tickets',
                     type: 'item',
                     url: '/tickets',
                     icon: IconTicket,
@@ -23,7 +21,7 @@ const berichte = {
                 },
                 {
                     id: 'scans',
-                    title: <FormattedMessage id="Scans" />,
+                    title: 'Scans',
                     type: 'item',
                     icon: IconScan,
                     url: '/scans',
@@ -31,7 +29,7 @@ const berichte = {
                 },
                 {
                     id: 'einlass-bericht',
-                    title: <FormattedMessage id="Einlass-Bericht" />,
+                    title: 'Einlass-Bericht',
                     type: 'item',
                     icon: IconReportAnalytics,
                     url: '/einlass',

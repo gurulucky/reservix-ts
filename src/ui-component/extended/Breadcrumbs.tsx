@@ -8,7 +8,7 @@ import MuiBreadcrumbs from '@mui/material/Breadcrumbs';
 
 // project imports
 import { BASE_PATH } from 'config';
-import { gridSpacing } from 'store/constant';
+import { gridSpacing } from '../../store/constant';
 
 // assets
 import { IconTallymark1 } from '@tabler/icons';

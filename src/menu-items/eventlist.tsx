@@ -1,6 +1,3 @@
-// third-party
-import { FormattedMessage } from 'react-intl';
-
 // assets
 import { IconCalendarEvent } from '@tabler/icons';
 // ==============================|| SAMPLE PAGE & DOCUMENTATION MENU ITEMS ||============================== //
@@ -11,7 +8,7 @@ const event = {
     children: [
         {
             id: 'event-list',
-            title: <FormattedMessage id="Event-List" />,
+            title: 'Event-List',
             type: 'item',
             url: '/eventlist',
             icon: IconCalendarEvent,

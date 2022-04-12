@@ -4,9 +4,8 @@ import { Avatar, Box, Stack, Typography, IconButton } from '@mui/material';
 import LoginIcon from '@mui/icons-material/Login';
 // project imports
 import LogoSection from '../LogoSection';
-import MobileSection from './MobileSection';
-import { useDispatch, useSelector } from 'store';
-import { openDrawer } from 'store/slices/menu';
+import { useDispatch, useSelector } from '../../../store';
+import { openDrawer } from '../../../store/slices/menu';
 
 // assets
 import { IconMenu2 } from '@tabler/icons';
@@ -81,9 +80,9 @@ const Header = () => {
                 </IconButton>
             </Stack>
             {/* mobile header */}
-            <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
+            {/* <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
                 <MobileSection />
-            </Box>
+            </Box> */}
         </>
     );
 };

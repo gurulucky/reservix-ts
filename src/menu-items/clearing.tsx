@@ -1,5 +1,3 @@
-import { FormattedMessage } from 'react-intl';
-// assets
 import { IconClearAll } from '@tabler/icons';
 // ==============================|| SAMPLE PAGE & DOCUMENTATION MENU ITEMS ||============================== //
 
@@ -9,7 +7,7 @@ const clearing = {
     children: [
         {
             id: 'clearing',
-            title: <FormattedMessage id="Clearing" />,
+            title: 'Clearing',
             type: 'item',
             url: '/clearing',
             icon: IconClearAll,

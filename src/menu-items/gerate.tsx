@@ -1,4 +1,3 @@
-import { FormattedMessage } from 'react-intl';
 // assets
 import { IconTool, IconSmartHome, IconNews } from '@tabler/icons';
 // ==============================|| gerate MENU ITEMS ||============================== //
@@ -15,7 +14,7 @@ const gerate = {
             children: [
                 {
                     id: 'ubersicht',
-                    title: <FormattedMessage id="Ubersicht" />,
+                    title: 'Ubersicht',
                     type: 'item',
                     icon: IconSmartHome,
                     url: '/ubersicht',
@@ -23,7 +22,7 @@ const gerate = {
                 },
                 {
                     id: 'Neu',
-                    title: <FormattedMessage id="Neu" />,
+                    title: 'Neu',
                     type: 'item',
                     icon: IconNews,
                     url: '/neu',

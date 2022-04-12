@@ -1,5 +1,3 @@
-import { FormattedMessage } from 'react-intl';
-// assets
 import { IconBarcode } from '@tabler/icons';
 // ==============================|| SAMPLE PAGE & DOCUMENTATION MENU ITEMS ||============================== //
 
@@ -9,7 +7,7 @@ const scannen = {
     children: [
         {
             id: 'scannen',
-            title: <FormattedMessage id="Scannen" />,
+            title: 'Scannen',
             type: 'item',
             url: '/scannen',
             icon: IconBarcode,

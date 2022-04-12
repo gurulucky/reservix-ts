@@ -7,8 +7,8 @@ import { Avatar, Chip, ListItemButton, ListItemIcon, ListItemText, Typography, u
 
 // project imports
 import useConfig from 'hooks/useConfig';
-import { useDispatch, useSelector } from 'store';
-import { activeItem, openDrawer } from 'store/slices/menu';
+import { useDispatch, useSelector } from '../../../../../store';
+import { activeItem, openDrawer } from '../../../../../store/slices/menu';
 
 // assets
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';

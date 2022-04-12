@@ -8,7 +8,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 // project imports
 import App from 'App';
 import { BASE_PATH } from 'config';
-import { store, persister } from 'store';
+import { store, persister } from './store';
 import * as serviceWorker from 'serviceWorker';
 import reportWebVitals from 'reportWebVitals';
 import { ConfigProvider } from 'contexts/ConfigContext';
@@ -20,13 +20,13 @@ import 'assets/scss/style.scss';
 
 ReactDOM.render(
     <Provider store={store}>
-        <PersistGate loading={null} persistor={persister}>
-            <ConfigProvider>
-                <BrowserRouter basename={BASE_PATH}>
-                    <App />
-                </BrowserRouter>
-            </ConfigProvider>
-        </PersistGate>
+        {/* <PersistGate loading={null} persistor={persister}> */}
+        <ConfigProvider>
+            <BrowserRouter basename={BASE_PATH}>
+                <App />
+            </BrowserRouter>
+        </ConfigProvider>
+        {/* </PersistGate> */}
     </Provider>,
     document.getElementById('root')
 );
