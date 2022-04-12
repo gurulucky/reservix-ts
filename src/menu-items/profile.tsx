@@ -1,31 +1,31 @@
 // assets
 // import { IconTool, IconSmartHome, IconNews } from '@tabler/icons';
-// ==============================|| gerate MENU ITEMS ||============================== //
+// ==============================|| profile MENU ITEMS ||============================== //
 
-const gerate = {
-    id: 'pages',
+const profile = {
+    id: 'profile',
     type: 'group',
     children: [
         {
-            id: 'gerate',
-            title: 'gerate',
+            id: 'profile',
+            title: 'Profile',
             type: 'collapse',
             // icon: IconTool,
             children: [
                 {
-                    id: 'ubersicht',
-                    title: 'Ubersicht',
+                    id: 'bearbeiten',
+                    title: 'Bearbeiten',
                     type: 'item',
                     // icon: IconSmartHome,
-                    url: '/ubersicht',
+                    url: '/bearbeiten',
                     breadcrumbs: false
                 },
                 {
-                    id: 'Neu',
-                    title: 'Neu',
+                    id: 'zuweisen',
+                    title: 'Zuweisen',
                     type: 'item',
                     // icon: IconNews,
-                    url: '/neu',
+                    url: '/zuweisen',
                     breadcrumbs: false
                 }
             ]
@@ -33,4 +33,4 @@ const gerate = {
     ]
 };
 
-export default gerate;
+export default profile;

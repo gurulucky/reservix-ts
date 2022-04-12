@@ -1,4 +1,4 @@
-import { IconClearAll } from '@tabler/icons';
+// import { IconClearAll } from '@tabler/icons';
 // ==============================|| SAMPLE PAGE & DOCUMENTATION MENU ITEMS ||============================== //
 
 const clearing = {
@@ -10,7 +10,7 @@ const clearing = {
             title: 'Clearing',
             type: 'item',
             url: '/clearing',
-            icon: IconClearAll,
+            // icon: IconClearAll,
             breadcrumbs: false
         }
     ]

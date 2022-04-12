@@ -1,7 +1,7 @@
 // material-ui
 import { useTheme } from '@mui/material/styles';
-import { Avatar, Box, Stack, Typography, IconButton } from '@mui/material';
-import LoginIcon from '@mui/icons-material/Login';
+import { Avatar, Box, Stack, Typography, IconButton, useMediaQuery } from '@mui/material';
+import LogoutIcon from '@mui/icons-material/Logout';
 // project imports
 import LogoSection from '../LogoSection';
 import { useDispatch, useSelector } from '../../../store';
@@ -14,7 +14,7 @@ import { IconMenu2 } from '@tabler/icons';
 
 const Header = () => {
     const theme = useTheme();
-
+    const matchUpMd = useMediaQuery(theme.breakpoints.up('lg'));
     const dispatch = useDispatch();
     const { drawerOpen } = useSelector((state) => state.menu);
 
@@ -33,25 +33,27 @@ const Header = () => {
                 <Box component="span" sx={{ display: { xs: 'none', md: 'block' }, flexGrow: 1 }}>
                     <LogoSection />
                 </Box>
-                <Avatar
-                    variant="rounded"
-                    sx={{
-                        ...theme.typography.commonAvatar,
-                        ...theme.typography.mediumAvatar,
-                        overflow: 'hidden',
-                        transition: 'all .2s ease-in-out',
-                        background: theme.palette.mode === 'dark' ? theme.palette.dark.main : theme.palette.secondary.light,
-                        color: theme.palette.mode === 'dark' ? theme.palette.secondary.main : theme.palette.secondary.dark,
-                        '&:hover': {
-                            background: theme.palette.mode === 'dark' ? theme.palette.secondary.main : theme.palette.secondary.dark,
-                            color: theme.palette.mode === 'dark' ? theme.palette.secondary.light : theme.palette.secondary.light
-                        }
-                    }}
-                    onClick={() => dispatch(openDrawer(!drawerOpen))}
-                    color="inherit"
-                >
-                    <IconMenu2 stroke={1.5} size="1.3rem" />
-                </Avatar>
+                {!matchUpMd && (
+                    <Avatar
+                        variant="rounded"
+                        sx={{
+                            ...theme.typography.commonAvatar,
+                            ...theme.typography.mediumAvatar,
+                            overflow: 'hidden',
+                            transition: 'all .2s ease-in-out',
+                            background: theme.palette.mode === 'dark' ? theme.palette.dark.main : theme.palette.secondary.light,
+                            color: theme.palette.mode === 'dark' ? theme.palette.secondary.main : theme.palette.secondary.dark,
+                            '&:hover': {
+                                background: theme.palette.mode === 'dark' ? theme.palette.secondary.main : theme.palette.secondary.dark,
+                                color: theme.palette.mode === 'dark' ? theme.palette.secondary.light : theme.palette.secondary.light
+                            }
+                        }}
+                        onClick={() => dispatch(openDrawer(!drawerOpen))}
+                        color="inherit"
+                    >
+                        <IconMenu2 stroke={1.5} size="1.3rem" />
+                    </Avatar>
+                )}
             </Box>
 
             {/* header search */}
@@ -75,7 +77,7 @@ const Header = () => {
             <Stack direction="row" spacing={2} alignItems="center">
                 <Typography>Umut Delil(21309987)</Typography>
                 <IconButton size="small">
-                    <LoginIcon />
+                    <LogoutIcon />
                     <Typography>Ausloggen</Typography>
                 </IconButton>
             </Stack>

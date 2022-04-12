@@ -1,5 +1,5 @@
 // assets
-import { IconCalendarEvent } from '@tabler/icons';
+// import { IconCalendarEvent } from '@tabler/icons';
 // ==============================|| SAMPLE PAGE & DOCUMENTATION MENU ITEMS ||============================== //
 
 const event = {
@@ -11,7 +11,7 @@ const event = {
             title: 'Event-List',
             type: 'item',
             url: '/eventlist',
-            icon: IconCalendarEvent,
+            // icon: IconCalendarEvent,
             breadcrumbs: false
         }
     ]

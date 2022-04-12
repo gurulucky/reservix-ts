@@ -1,4 +1,4 @@
-import { IconBarcode } from '@tabler/icons';
+// import { IconBarcode } from '@tabler/icons';
 // ==============================|| SAMPLE PAGE & DOCUMENTATION MENU ITEMS ||============================== //
 
 const scannen = {
@@ -10,7 +10,7 @@ const scannen = {
             title: 'Scannen',
             type: 'item',
             url: '/scannen',
-            icon: IconBarcode,
+            // icon: IconBarcode,
             breadcrumbs: false
         }
     ]

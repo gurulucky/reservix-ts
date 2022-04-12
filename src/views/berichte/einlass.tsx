@@ -1,8 +1,9 @@
 // project imports
-import MainCard from 'ui-component/cards/MainCard';
+// import MainCard from 'ui-component/cards/MainCard';
+import { Typography } from '@mui/material';
 
 // ==============================|| SAMPLE PAGE ||============================== //
 
-const EinlassPage = () => <MainCard title="Einlass-Bericht" />;
+const EinlassPage = () => <Typography variant="h4">Einlass-Bericht</Typography>;
 
 export default EinlassPage;

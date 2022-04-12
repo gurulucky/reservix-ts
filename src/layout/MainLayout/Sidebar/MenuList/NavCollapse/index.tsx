@@ -3,8 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
-import { Collapse, List, ListItemButton, ListItemIcon, ListItemText, Typography } from '@mui/material';
-import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import { Collapse, List, ListItemButton, ListItemText, Typography } from '@mui/material';
 
 // project imports
 import NavItem from '../NavItem';
@@ -65,19 +64,6 @@ const NavCollapse = ({ menu, level }: NavCollapseProps) => {
         }
     });
 
-    const Icon = menu.icon!;
-    const menuIcon = menu.icon ? (
-        <Icon strokeWidth={1.5} size="1.3rem" style={{ marginTop: 'auto', marginBottom: 'auto' }} />
-    ) : (
-        <FiberManualRecordIcon
-            sx={{
-                width: selected === menu.id ? 8 : 6,
-                height: selected === menu.id ? 8 : 6
-            }}
-            fontSize={level > 0 ? 'inherit' : 'medium'}
-        />
-    );
-
     return (
         <>
             <ListItemButton
@@ -92,7 +78,7 @@ const NavCollapse = ({ menu, level }: NavCollapseProps) => {
                 selected={selected === menu.id}
                 onClick={handleClick}
             >
-                <ListItemIcon sx={{ my: 'auto', minWidth: !menu.icon ? 18 : 36 }}>{menuIcon}</ListItemIcon>
+                {/* <ListItemIcon sx={{ my: 'auto', minWidth: !menu.icon ? 18 : 36 }}>{menuIcon}</ListItemIcon> */}
                 <ListItemText
                     primary={
                         <Typography variant={selected === menu.id ? 'h5' : 'body1'} color="inherit" sx={{ my: 'auto' }}>

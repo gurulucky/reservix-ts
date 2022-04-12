@@ -10,5 +10,5 @@ import logo from 'assets/images/logo.png';
 
 // ==============================|| LOGO SVG ||============================== //
 
-const Logo = () => <img src={logo} alt="Berry" width="130" />;
+const Logo = () => <img src={logo} alt="StartX" width="130" />;
 export default Logo;

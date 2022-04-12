@@ -1,4 +1,4 @@
-import { IconReport, IconTicket, IconScan, IconReportAnalytics } from '@tabler/icons';
+// import { IconReport, IconTicket, IconScan, IconReportAnalytics } from '@tabler/icons';
 // ==============================|| berichte MENU ITEMS ||============================== //
 
 const berichte = {
@@ -9,21 +9,21 @@ const berichte = {
             id: 'berichte',
             title: 'Berichte',
             type: 'collapse',
-            icon: IconReport,
+            // icon: IconReport,
             children: [
                 {
                     id: 'tickets',
                     title: 'Tickets',
                     type: 'item',
                     url: '/tickets',
-                    icon: IconTicket,
+                    // icon: IconTicket,
                     breadcrumbs: false
                 },
                 {
                     id: 'scans',
                     title: 'Scans',
                     type: 'item',
-                    icon: IconScan,
+                    // icon: IconScan,
                     url: '/scans',
                     breadcrumbs: false
                 },
@@ -31,7 +31,7 @@ const berichte = {
                     id: 'einlass-bericht',
                     title: 'Einlass-Bericht',
                     type: 'item',
-                    icon: IconReportAnalytics,
+                    // icon: IconReportAnalytics,
                     url: '/einlass',
                     breadcrumbs: false
                 }
