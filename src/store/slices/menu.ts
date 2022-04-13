@@ -4,7 +4,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 // initial state
 const initialState: MenuProps = {
-    openItem: ['dashboard'],
+    openItem: ['eventlist'],
     drawerOpen: false
 };
 

@@ -9,7 +9,7 @@ import { Collapse, List, ListItemButton, ListItemText, Typography } from '@mui/m
 import NavItem from '../NavItem';
 import { NavGroupProps } from '../NavGroup';
 import useConfig from 'hooks/useConfig';
-
+import { useSelector } from '../../../../../store';
 // assets
 import { IconChevronDown, IconChevronUp } from '@tabler/icons';
 
@@ -23,7 +23,7 @@ interface NavCollapseProps {
 const NavCollapse = ({ menu, level }: NavCollapseProps) => {
     const theme = useTheme();
     const { borderRadius } = useConfig();
-
+    const { openItem } = useSelector((state) => state.menu);
     const [open, setOpen] = useState(false);
     const [selected, setSelected] = useState<string | null | undefined>(null);
 
@@ -46,7 +46,20 @@ const NavCollapse = ({ menu, level }: NavCollapseProps) => {
                 setOpen(true);
             }
         });
-    }, [pathname, menu.children]);
+        if (menu && menu.children) {
+            let i = 0;
+            for (i = 0; i < menu.children?.length; i += 1) {
+                const item = menu.children[i];
+                if (openItem?.findIndex((id) => id === item.id) > -1) {
+                    break;
+                }
+            }
+            if (i === menu.children?.length) {
+                setOpen(false);
+                setSelected(null);
+            }
+        }
+    }, [pathname, menu.children, menu, openItem]);
 
     // menu collapse & item
     const menus = menu.children?.map((item) => {

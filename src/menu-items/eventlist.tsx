@@ -7,7 +7,7 @@ const event = {
     type: 'group',
     children: [
         {
-            id: 'event-list',
+            id: 'eventlist',
             title: 'Event-List',
             type: 'item',
             url: '/eventlist',

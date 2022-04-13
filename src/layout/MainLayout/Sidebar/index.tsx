@@ -58,7 +58,11 @@ const Sidebar = ({ window }: SidebarProps) => {
     const container = window !== undefined ? () => window.document.body : undefined;
 
     return (
-        <Box component="nav" sx={{ flexShrink: { md: 0 }, width: matchUpMd ? drawerWidth : 'auto' }} aria-label="mailbox folders">
+        <Box
+            component="nav"
+            sx={{ flexShrink: { md: 0 }, width: matchUpMd ? drawerWidth : 'auto', boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 12px' }}
+            aria-label="mailbox folders"
+        >
             <Drawer
                 container={container}
                 variant={matchUpMd ? 'persistent' : 'temporary'}

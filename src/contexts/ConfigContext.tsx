@@ -30,7 +30,7 @@ type ConfigProviderProps = {
 };
 
 function ConfigProvider({ children }: ConfigProviderProps) {
-    const [config, setConfig] = useLocalStorage('berry-config', {
+    const [config, setConfig] = useLocalStorage('StartX-config', {
         fontFamily: initialState.fontFamily,
         borderRadius: initialState.borderRadius,
         outlinedFilled: initialState.outlinedFilled,

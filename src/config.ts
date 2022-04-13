@@ -8,9 +8,9 @@ export const JWT_API = {
 
 export const FIREBASE_API = {
     apiKey: 'AIzaSyBernKzdSojh_vWXBHt0aRhf5SC9VLChbM',
-    authDomain: 'berry-material-react.firebaseapp.com',
-    projectId: 'berry-material-react',
-    storageBucket: 'berry-material-react.appspot.com',
+    authDomain: 'StartX-material-react.firebaseapp.com',
+    projectId: 'StartX-material-react',
+    storageBucket: 'StartX-material-react.appspot.com',
     messagingSenderId: '901111229354',
     appId: '1:901111229354:web:a5ae5aa95486297d69d9d3',
     measurementId: 'G-MGJHSL8XW3'
@@ -27,7 +27,7 @@ export const AWS_API = {
 };
 
 // basename: only at build time to set, and Don't add '/' at end off BASENAME for breadcrumbs, also Don't put only '/' use blank('') instead,
-// like '/berry-material-react/react/default'
+// like '/StartX-material-react/react/default'
 export const BASE_PATH = '';
 
 export const DASHBOARD_PATH = '/sample-page';
