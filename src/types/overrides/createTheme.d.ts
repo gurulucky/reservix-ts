@@ -15,7 +15,7 @@ declare module '@mui/material/styles' {
         customization: Typography;
         darkTextSecondary: string;
         textDark: string;
-        grey500: string;
+        grey500: string; 
         darkTextPrimary: string;
     }
 }

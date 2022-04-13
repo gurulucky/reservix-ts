@@ -73,11 +73,11 @@ const Header = () => {
 
             {/* notification & profile */}
             {/* <NotificationSection />
-            <ProfileSection /> */}
+            <ProfileSection /> */} 
             <Stack direction="row" spacing={2} alignItems="center">
                 <Typography>Umut Delil(21309987)</Typography>
                 <IconButton size="small">
-                    <LogoutIcon />
+                    <LogoutIcon sx={{ marginRight: '10px' }} />
                     <Typography>Ausloggen</Typography>
                 </IconButton>
             </Stack>

@@ -9,11 +9,11 @@ import App from 'App';
 import { BASE_PATH } from 'config';
 import { store } from './store';
 import * as serviceWorker from 'serviceWorker';
-import reportWebVitals from 'reportWebVitals';
+// import reportWebVitals from 'reportWebVitals';
 import { ConfigProvider } from 'contexts/ConfigContext';
 
 // style + assets
-import 'assets/scss/style.scss';
+// import 'assets/scss/style.scss';
 
 // ==============================|| REACT DOM RENDER  ||============================== //
 
@@ -38,4 +38,4 @@ serviceWorker.unregister();
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// reportWebVitals();
